@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+}
+
+.header {
+    background-color: #2A2A2A;
+}
+
+.text-header {
+    color: #a8a8a8;
+}
+
+.text-content {
+    color: #9a9a9a;
+}
+
+.text-title-sm {
+    font-size: 1.2rem;
+}
+
+.btn-main {
+    background-color:  #0078f2;
+    border: none;
+    padding: 5px 10px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+li.active::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #0078f2;
+    left: 0;
+    bottom: -7px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    animation: appear 0.2s linear;
+}
+@keyframes appear {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.list-image-game {
+    width: 150px;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.list-row {
+    margin-bottom: 1.9rem;
+}
+
+
+.zoom:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
+/*image hover*/
+.container-img {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-img:hover .image {
+    opacity: 1;
+}
+
+.container-img:hover .middle {
+    opacity: 1;
+}
+
+.bg-dark {
+    background-color: #121212 !important;
+}
+
+.card-game {
+    width: 24%;
+    margin-right: 0.5rem;
+}
+
